@@ -37,7 +37,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="glass-card col-span-6 p-8">
+	<div class="glass-card col-span-6 p-2 h-[464px]">
 		<TechStack />
 	</div>
 </div>
