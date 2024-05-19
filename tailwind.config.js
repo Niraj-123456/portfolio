@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
 	content: [
 		'./node_modules/flowbite-svelte-icons/**/*.{html,js,svelte,ts}',
 		'./src/**/*.{html,js,svelte,ts}'
@@ -7,5 +7,5 @@ export default {
 	theme: {
 		extend: {}
 	},
-	plugins: []
+	plugins: [require('daisyui')]
 };
