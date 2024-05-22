@@ -23,6 +23,11 @@ body {
 	color: #fff;
 }
 
+*,
+body {
+	scroll-behavior: smooth;
+}
+
 body,
 *,
 *::after,
@@ -30,6 +35,24 @@ body,
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+.scrollbar_hidden::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollbar_custom::-webkit-scrollbar {
+	width: 4px;
+	height: 6px;
+}
+
+.scrollbar_custom::-webkit-scrollbar-track {
+	background: gray;
+}
+
+.scrollbar_custom::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 @layer components {

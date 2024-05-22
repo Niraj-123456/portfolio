@@ -1,13 +1,13 @@
 <script>
-	import { EnvelopeOutline, LinkedinSolid, PhoneOutline } from 'flowbite-svelte-icons';
+	import { MailIcon, LinkedinIcon, PhoneCallIcon } from 'lucide-svelte';
 </script>
 
 <div class="w-full text-center relative">
-	<div class="relative w-full h-screen overflow-hidden opacity-30">
+	<div class="relative w-full h-screen overflow-hidden opacity-50">
 		<img
 			src="/images/hero.svg"
 			alt="profile"
-			class="object-cover object-top w-full h-full absolute top-0 left-0 filter blur-[1.5px]"
+			class="object-cover object-top w-full h-full absolute top-0 left-0"
 		/>
 	</div>
 	<div class="absolute top-1/3 left-1/2 -translate-x-1/2 translate-y-0">
@@ -21,25 +21,34 @@
 			different tech stack such as React js, Nextjs, Svelte, Node Js and more.
 		</p>
 		<ul class="text-md mt-6 flex gap-8 justify-center">
-			<li class="flex items-center gap-2">
-				<EnvelopeOutline size="sm" />
+			<li
+				class="flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-white/70"
+			>
+				<MailIcon />
 				<a href="mailto:niraj.02lama@gmail.com"> niraj.02lama@gmail.com </a>
 			</li>
-			<li class="flex items-center gap-2">
-				<LinkedinSolid size="sm" />
+			<li
+				class="flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-white/70"
+			>
+				<LinkedinIcon />
 				<a href="https://www.linkedin.com/in/niraj-lama-000/" target="_blank">
 					https://www.linkedin.com/in/niraj-lama-000/
 				</a>
 			</li>
-			<li class="flex items-center gap-2">
-				<PhoneOutline size="sm" />
-
-				9843xxxxxx
+			<li
+				class="flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-white/70"
+			>
+				<PhoneCallIcon />
+				<a href="tel:9841752015"> 9843xxxxxx </a>
 			</li>
 		</ul>
 		<div class="mt-8 flex gap-4 items-center justify-center">
-			<button class="btn btn-primary text-lg text-white">Download Resume</button>
-			<button class="btn btn-outline text-lg text-white">Contact</button>
+			<a
+				href="/documents/Niraj-Lama-Resume.pdf"
+				download="Niraj-Lama.pdf"
+				class="btn btn-primary text-lg text-white">Download Resume</a
+			>
+			<a href="/contact" class="btn btn-outline text-lg text-white">Contact</a>
 		</div>
 	</div>
 </div>
