@@ -2,7 +2,7 @@
 	import ProjectCard from '$lib/project-card/ProjectCard.svelte';
 	import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-svelte';
 
-	const defaultScrollValue = 420;
+	const defaultScrollValue = 410;
 	const handleRightScroll = () => {
 		const container = document.getElementById('project-list-container');
 		if (container) {
