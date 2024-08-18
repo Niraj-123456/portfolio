@@ -6,7 +6,7 @@
 
 <main class="w-full min-h-screen">
 	<Header />
-	<div class="w-full m-auto">
+	<div class="w-full px-32">
 		<slot />
 	</div>
 	<Footer />
