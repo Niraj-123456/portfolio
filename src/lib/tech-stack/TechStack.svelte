@@ -1,5 +1,5 @@
 <section class="h-full w-full p-8 mt-8">
-	<div class="relative rounded-full w-[52%] h-[950px] m-auto">
+	<div class="relative rounded-full w-[70%] h-[950px] m-auto">
 		<img
 			src="images/tech-stack/mui.png"
 			alt="Mui"
