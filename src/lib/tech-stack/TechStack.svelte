@@ -1,57 +1,83 @@
 <section class="h-full w-full p-8 mt-8">
-	<div class="relative rounded-full w-[70%] h-[950px] m-auto">
-		<img
-			src="images/tech-stack/mui.png"
-			alt="Mui"
-			class="w-52 h-52 object-cover object-center absolute top-1/2 left-0 translate-x-0 -translate-y-1/2"
-		/>
+	<div class="text-gray-600 text-center text-lg font-bold">Tech stack</div>
+	<div class="w-full h-28 overflow-hidden relative marquee-container">
+		<div class="w-full h-full flex gap-12 items-center absolute marquee">
+			<img src="images/tech-stack/mui.png" alt="Mui" />
 
-		<img
-			src="images/tech-stack/nextjs.png"
-			alt="Nextjs"
-			class="w-52 h-52 object-contain object-center absolute top-0 left-1/2 -translate-x-1/2 translate-y-0"
-		/>
+			<img src="images/tech-stack/nextjs.png" alt="Nextjs" />
 
-		<img
-			src="images/tech-stack/svelte.png"
-			alt="Svelte"
-			class="w-52 h-52 object-contain object-center absolute top-24 left-24 translate-x-0 translate-y-0"
-		/>
+			<img src="images/tech-stack/svelte.png" alt="Svelte" />
 
-		<img
-			src="images/tech-stack/node.png"
-			alt="Nodejs"
-			class="w-52 h-52 object-contain object-center absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-0"
-		/>
+			<img src="images/tech-stack/node.png" alt="Nodejs" />
 
-		<img
-			src="images/tech-stack/react.png"
-			alt="React"
-			class="w-64 h-64 object-contain object-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-		/>
+			<img src="images/tech-stack/react.png" alt="React" />
 
-		<img
-			src="images/tech-stack/tailwind.png"
-			alt="Tailwindcss"
-			class="w-52 h-52 object-contain object-center absolute bottom-24 left-24 translate-x-0 translate-y-0"
-		/>
+			<img src="images/tech-stack/tailwind.png" alt="Tailwindcss" />
 
-		<img
-			src="images/tech-stack/sass.png"
-			alt="Sass"
-			class="w-52 h-52 object-contain object-center absolute bottom-24 right-24 translate-x-0 translate-y-0"
-		/>
+			<img src="images/tech-stack/sass.png" alt="Sass" />
 
-		<img
-			src="images/tech-stack/antd.png"
-			alt="Antd"
-			class="w-52 h-52 object-contain object-center absolute top-1/2 right-0 translate-x-0 -translate-y-1/2"
-		/>
+			<img src="images/tech-stack/antd.png" alt="Antd" />
 
-		<img
-			src="images/tech-stack/rest-api.svg"
-			alt="REST"
-			class="w-52 h-52 object-contain object-center absolute top-24 right-24 translate-x-0 translate-y-0"
-		/>
+			<img src="images/tech-stack/rest-api.svg" alt="REST" />
+		</div>
+		<div class="w-full h-full flex gap-12 items-center absolute marquee" style="left: 1264px">
+			<img src="images/tech-stack/mui.png" alt="Mui" />
+
+			<img src="images/tech-stack/nextjs.png" alt="Nextjs" />
+
+			<img src="images/tech-stack/svelte.png" alt="Svelte" />
+
+			<img src="images/tech-stack/node.png" alt="Nodejs" />
+
+			<img src="images/tech-stack/react.png" alt="React" />
+
+			<img src="images/tech-stack/tailwind.png" alt="Tailwindcss" />
+
+			<img src="images/tech-stack/sass.png" alt="Sass" />
+
+			<img src="images/tech-stack/antd.png" alt="Antd" />
+
+			<img src="images/tech-stack/rest-api.svg" alt="REST" />
+		</div>
 	</div>
 </section>
+
+<style>
+	.marquee-container {
+		filter: grayscale(1);
+		opacity: 0.7;
+		-webkit-mask-image: linear-gradient(
+			90deg,
+			hsla(0, 0%, 100%, 0),
+			#fff 20%,
+			#fff 80%,
+			hsla(0, 0%, 100%, 0)
+		);
+		mask-image: linear-gradient(
+			90deg,
+			hsla(0, 0%, 100%, 0),
+			#fff 20%,
+			#fff 80%,
+			hsla(0, 0%, 100%, 0)
+		);
+	}
+	.marquee {
+		animation: marquee 10s linear infinite;
+	}
+
+	.marquee img {
+		max-width: 100px;
+		max-height: 80px;
+		height: auto;
+		margin: auto;
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-1264px);
+		}
+	}
+</style>
