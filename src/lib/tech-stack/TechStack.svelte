@@ -1,5 +1,5 @@
 <section class="h-full w-full p-8 mt-8">
-	<div class="text-gray-600 text-center text-lg font-bold">Tech stack</div>
+	<div class="text-center text-2xl font-bold">Tech stack</div>
 	<div class="w-full h-28 overflow-hidden relative marquee-container">
 		<div class="w-full h-full flex gap-12 items-center absolute marquee">
 			<img src="images/tech-stack/mui.png" alt="Mui" />

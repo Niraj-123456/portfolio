@@ -3,7 +3,7 @@
 </script>
 
 <section class="mt-8">
-	<div class="max-w-2xl m-auto">
+	<div class="max-w-xl m-auto">
 		<h1 class="text-2xl font-bold text-center">Contact Form</h1>
 
 		<form class="flex flex-col mt-8 gap-6">

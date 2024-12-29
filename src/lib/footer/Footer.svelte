@@ -2,7 +2,7 @@
 	import { FacebookIcon, Instagram, Twitter } from 'lucide-svelte';
 </script>
 
-<section class="w-full py-8 mt-8 border-t border-gray-300">
+<section class="w-full py-8 mt-12 border-t border-gray-300">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex gap-48">
 			<div>
@@ -19,10 +19,10 @@
 					<ul
 						class="flex flex-col gap-2 mt-2 *:text-sm *:text-gray-800 *:cursor-pointer hover:[&>*]:text-gray-600"
 					>
-						<li>Project 1</li>
-						<li>Project 2</li>
-						<li>Project 3</li>
-						<li>Project 4</li>
+						<li>Fake Store</li>
+						<li>Recipe App</li>
+						<li>Chat App</li>
+						<li>Next Login</li>
 					</ul>
 				</div>
 				<div>
