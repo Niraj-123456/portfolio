@@ -17,7 +17,7 @@
 
 			<div class="mt-12 flex gap-4 items-center justify-center">
 				<a
-					href="/documents/Niraj-Lama-Resume.pdf"
+					href="/documents/Niraj_Lama-Resume.pdf"
 					download="Niraj-Lama.pdf"
 					class="bg-blue-500 w-max rounded-md flex px-8 py-3 justify-center items-center text-lg text-white font-semibold"
 					>Resume
