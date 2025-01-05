@@ -4,9 +4,9 @@
 
 <div class="w-full h-full">
 	<div class="text-center">
-		<div class="py-28">
-			<h1 class="text-6xl font-bold tracking-wide whitespace-nowrap slide-right">
-				Hi, I'm Niraj Lama <br /><span class="text-5xl">(I'm a Software Engineer)</span>
+		<div class="pt-14 sm:pt-28">
+			<h1 class="text-6xl font-bold tracking-wide">
+				Hi, I'm Niraj Lama <br /><span class="text-4xl">(I'm a Software Engineer)</span>
 			</h1>
 			<p class="pt-6 text-lg leading-8 text-gray-500 fade-in-scale-in">
 				Passionate about building awesome reponsive web apps and converting ideas into life, I have
@@ -31,6 +31,28 @@
 					Get in touch
 				</a>
 			</div>
+
+			<div
+				class="mt-10 pt-16 pl-16 w-full max-w-4xl mx-auto overflow-hidden hero-image sm:pt-14 sm:pl-0"
+			>
+				<img src="/images/projects/fake-store/fake-store5.png" alt="" class="w-full h-auto" />
+			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+	.hero-image {
+		perspective: 2000px;
+		transform-style: preserve-3d;
+	}
+
+	.hero-image img {
+		transform: rotateX(35deg) rotateY(-20deg) rotate(5deg) translateZ(120px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+		transform-origin: center;
+		-webkit-mask-image: linear-gradient(180deg, #000 70%, transparent);
+		mask-image: linear-gradient(180deg, #000 70%, transparent);
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+</style>

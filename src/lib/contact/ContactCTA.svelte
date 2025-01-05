@@ -3,11 +3,11 @@
 </script>
 
 <div
-	class="border flex justify-center items-center gap-8 py-14 rounded-xl overflow-hidden contactCTA-container"
+	class="w-full border flex flex-col justify-center items-center gap-2 py-7 rounded-xl overflow-hidden contactCTA-container sm:py-14 sm:flex-row sm:gap-8"
 >
-	<p class="font-extrabold text-5xl py-4">Let's get it touch.</p>
+	<p class="font-extrabold text-3xl py-4 sm:text-5xl">Let's get it touch.</p>
 
-	<Button class="text-xl h-12 px-6 font-normal">Click me</Button>
+	<Button class="text-lg h-10 px-12 font-normal sm:text-xl sm:h-12 sm:px-6">Click me</Button>
 </div>
 
 <style>

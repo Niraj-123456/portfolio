@@ -1,4 +1,4 @@
-<section class="h-full w-full p-8 mt-8">
+<section class="h-full w-full">
 	<div class="text-center text-2xl font-bold">Tech stack</div>
 	<div class="w-full h-28 overflow-hidden relative marquee-container">
 		<div class="w-full h-full flex gap-12 items-center absolute marquee">

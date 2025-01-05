@@ -9,6 +9,7 @@
 
 <div class="w-full grid gap-12">
 	<HeroSection />
+
 	<TechStack />
 	<FeaturedProject />
 	<OtherProjects />

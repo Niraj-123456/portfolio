@@ -2,7 +2,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
-<section class="mt-8">
+<section class="mt-8" id="contact">
 	<div class="max-w-xl m-auto">
 		<h1 class="text-2xl font-bold text-center">Contact Form</h1>
 

@@ -25,13 +25,17 @@
 	});
 </script>
 
-<section class="mt-16 py-4 w-full overflow-hidden relative">
+<section id="projects" class="mt-16 py-4 w-full overflow-hidden relative">
 	<h2 class="text-center text-2xl font-bold">Featured Project</h2>
 
-	<div class="flex gap-4 mt-8">
+	<div class="flex flex-col gap-8 mt-8 lg:flex-row">
 		<div class="w-full aspect-video overflow-hidden project-images">
 			{#each fakeStoreImages as fakeStoreImage, idx}
-				<img src={fakeStoreImage} alt="" class={cn(activeImageIdx === idx ? 'active' : '')} />
+				<img
+					src={fakeStoreImage}
+					alt=""
+					class={cn('aspect-video w-full h-auto', activeImageIdx === idx ? 'active' : '')}
+				/>
 			{/each}
 		</div>
 
