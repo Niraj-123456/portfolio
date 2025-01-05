@@ -17,15 +17,14 @@
 
 			<div class="mt-12 flex gap-4 items-center justify-center">
 				<a
-					href="/documents/Niraj_Lama-Resume.pdf"
+					href="/documents/Niraj_lama-Resume.pdf"
 					download="Niraj-Lama.pdf"
 					class="bg-blue-500 w-max rounded-md flex px-8 py-3 justify-center items-center text-lg text-white font-semibold"
 					>Resume
 					<CloudDownload class="ml-2" />
 				</a>
 				<a
-					href="/documents/Niraj-Lama-Resume.pdf"
-					download="Niraj-Lama.pdf"
+					href="#contact"
 					class="bg-gray-200 w-max rounded-md flex px-8 py-3 justify-center items-center text-lg font-semibold"
 				>
 					Get in touch
