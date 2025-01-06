@@ -2,8 +2,8 @@
 	<h2 class="text-center text-2xl font-bold">More Projects</h2>
 	<div class="mt-8 flex flex-col gap-12">
 		<div class="w-full flex flex-col gap-4 items-center justify-center">
-			<div class="w-full aspect-video h-full flex justify-center">
-				<img src="/images/projects/foodapp.png" alt="" />
+			<div class="w-full max-w-96 aspect-auto flex justify-center sm:w-full">
+				<img src="/images/projects/foodapp.png" alt="" class="w-full h-auto aspect-auto" />
 			</div>
 
 			<div class="pt-6">
