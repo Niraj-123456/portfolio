@@ -1,7 +1,15 @@
 <script lang="ts">
 	import { CloudDownload } from 'lucide-svelte';
 
-	export let profile: any;
+	type Profile = {
+		title: string;
+		subtitle: string;
+		description: string;
+		imageUrl: string;
+		resumeUrl: string;
+	};
+
+	export let profile: Profile;
 </script>
 
 <div class="w-full h-full">
@@ -11,15 +19,12 @@
 				{profile.title} <br /><span class="text-5xl">({profile.subtitle})</span>
 			</h1>
 			<p class="pt-6 text-lg leading-8 text-gray-500 fade-in-scale-in">
-				Passionate about building awesome reponsive web apps and converting ideas into life, I have
-				been a front-end developer for more than two years. During this two years, I have learned
-				and taught myself about different aspect of creating a user friendly responsive websites
-				using different tech stack such as React js, Nextjs, Svelte, Node Js and more.
+				{profile.description}
 			</p>
 
 			<div class="mt-12 flex gap-4 items-center justify-center">
 				<a
-					href="/documents/Niraj_lama-Resume.pdf"
+					href={`${profile.resumeUrl}?dl=`}
 					download="Niraj-Lama.pdf"
 					class="bg-blue-500 w-max rounded-md flex px-8 py-3 justify-center items-center text-lg text-white font-semibold"
 					>Resume
@@ -36,7 +41,7 @@
 			<div
 				class="mt-10 pt-16 pl-16 w-full max-w-4xl mx-auto overflow-hidden hero-image sm:pt-14 sm:pl-0"
 			>
-				<img src="/images/projects/fake-store/fake-store5.png" alt="" class="w-full h-auto" />
+				<img src={profile.imageUrl} alt="" class="w-full h-auto" />
 			</div>
 		</div>
 	</div>
