@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
 	import { CloudDownload } from 'lucide-svelte';
+
+	export let profile: any;
 </script>
 
 <div class="w-full h-full">
 	<div class="text-center">
-		<div class="pt-14 sm:pt-28">
-			<h1 class="text-6xl font-bold tracking-wide">
-				Hi, I'm Niraj Lama <br /><span class="text-4xl">(I'm a Software Engineer)</span>
+		<div class="py-28">
+			<h1 class="text-6xl font-bold tracking-wide whitespace-nowrap slide-right">
+				{profile.title} <br /><span class="text-5xl">({profile.subtitle})</span>
 			</h1>
 			<p class="pt-6 text-lg leading-8 text-gray-500 fade-in-scale-in">
 				Passionate about building awesome reponsive web apps and converting ideas into life, I have
