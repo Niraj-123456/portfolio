@@ -1,13 +1,6 @@
 <script lang="ts">
 	import { CloudDownload } from 'lucide-svelte';
-
-	type Profile = {
-		title: string;
-		subtitle: string;
-		description: string;
-		imageUrl: string;
-		resumeUrl: string;
-	};
+	import type { Profile } from '../../types/profile';
 
 	export let profile: Profile;
 </script>

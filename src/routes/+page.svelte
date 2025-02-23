@@ -12,9 +12,9 @@
 
 <div class="w-full grid gap-12">
 	<HeroSection profile={data.profile} />
-	<TechStack />
-	<FeaturedProject />
-	<OtherProjects />
+	<TechStack techStack={data.techStack.images} />
+	<FeaturedProject featuredProject={data.featuredProject} />
+	<OtherProjects projects={data.projects} />
 	<ContactForm />
 	<ContactCTA />
 </div>

@@ -1,43 +1,24 @@
+<script lang="ts">
+	type Stack = {
+		imageUrl: string;
+		name: string;
+	};
+
+	export let techStack: Stack[];
+</script>
+
 <section class="h-full w-full">
 	<div class="text-center text-2xl font-bold">Tech stack</div>
 	<div class="w-full h-28 overflow-hidden relative marquee-container">
 		<div class="w-full h-full flex gap-12 items-center absolute marquee">
-			<img src="images/tech-stack/mui.png" alt="Mui" />
-
-			<img src="images/tech-stack/nextjs.png" alt="Nextjs" />
-
-			<img src="images/tech-stack/svelte.png" alt="Svelte" />
-
-			<img src="images/tech-stack/node.png" alt="Nodejs" />
-
-			<img src="images/tech-stack/react.png" alt="React" />
-
-			<img src="images/tech-stack/tailwind.png" alt="Tailwindcss" />
-
-			<img src="images/tech-stack/sass.png" alt="Sass" />
-
-			<img src="images/tech-stack/antd.png" alt="Antd" />
-
-			<img src="images/tech-stack/rest-api.svg" alt="REST" />
+			{#each techStack as stack}
+				<img src={stack.imageUrl} alt={stack.name} />
+			{/each}
 		</div>
 		<div class="w-full h-full flex gap-12 items-center absolute marquee" style="left: 1264px">
-			<img src="images/tech-stack/mui.png" alt="Mui" />
-
-			<img src="images/tech-stack/nextjs.png" alt="Nextjs" />
-
-			<img src="images/tech-stack/svelte.png" alt="Svelte" />
-
-			<img src="images/tech-stack/node.png" alt="Nodejs" />
-
-			<img src="images/tech-stack/react.png" alt="React" />
-
-			<img src="images/tech-stack/tailwind.png" alt="Tailwindcss" />
-
-			<img src="images/tech-stack/sass.png" alt="Sass" />
-
-			<img src="images/tech-stack/antd.png" alt="Antd" />
-
-			<img src="images/tech-stack/rest-api.svg" alt="REST" />
+			{#each techStack as stack}
+				<img src={stack.imageUrl} alt={stack.name} />
+			{/each}
 		</div>
 	</div>
 </section>
