@@ -38,7 +38,7 @@
 <header
 	class={cn(
 		'w-full py-4 px-4 z-10 sticky top-0 border-b-2 border-opacity-0 transition-all ease-in-out duration-200 sm:px-8 lg:px-0',
-		top > 0 ? 'border-opacity-100 bg-[#ffffffbf] backdrop-blur-md backdrop-saturate-[180%]' : ''
+		top > 0 ? 'border-opacity-100 bg-[#ffffffab] backdrop-blur-md backdrop-saturate-[180%]' : ''
 	)}
 >
 	<div class="flex items-center mx-auto justify-between max-w-7xl">
