@@ -41,6 +41,6 @@
 		"lucide-svelte": "^0.379.0"
 	},
 	"engines": {
-		"node": "24.x"
+		"node": "18.x"
 	}
 }
