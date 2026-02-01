@@ -1,6 +1,8 @@
-<section class="h-full w-full">
-	<div class="text-center text-2xl font-bold">Tech stack</div>
-	<div class="w-full h-28 overflow-hidden relative marquee-container">
+<section class="py-10 border-y border-slate-200 bg-white">
+	<p class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-4">
+		Tech Stack &amp; Tools
+	</p>
+	<div class="w-full h-28 overflow-hidden relative marquee-container max-w-7xl mx-auto">
 		<div class="w-full h-full flex gap-12 items-center absolute marquee">
 			<img src="images/tech-stack/mui.png" alt="Mui" />
 

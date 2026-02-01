@@ -37,8 +37,7 @@
 
 <header
 	class={cn(
-		'w-full py-4 px-4 z-10 sticky top-0 border-b-2 border-opacity-0 transition-all ease-in-out duration-200 sm:px-8 lg:px-0',
-		top > 0 ? 'border-opacity-100 bg-[#ffffffbf] backdrop-blur-md backdrop-saturate-[180%]' : ''
+		'glass-nav fixed w-full py-4 px-4 z-10 top-0 border-b-2 border-opacity-0 transition-all ease-in-out duration-200 sm:px-8 lg:px-0'
 	)}
 >
 	<div class="flex items-center mx-auto justify-between max-w-7xl">
@@ -47,27 +46,26 @@
 		>
 			N
 		</div>
-		<nav class="hidden justify-end items-center sm:flex">
-			<ul class="flex items-center gap-4 text-base">
-				{#each routes as route}
-					<li
-						class={classname(
-							'transition-all duration-200 ease-in-out py-2 px-4 rounded-sm cursor-pointer hover:bg-white/10',
-							$page.url.pathname === route.path ? 'font-semibold' : ''
-						)}
+		<div class="items-center gap-2 hidden sm:flex">
+			<nav class="justify-end items-center flex">
+				<ul class="flex items-center gap-4 text-base">
+					{#each routes as route}
+						<li
+							class={classname(
+								'transition-all duration-200 ease-in-out py-2 px-4 rounded-sm cursor-pointer hover:bg-white/10',
+								$page.url.pathname === route.path ? 'font-semibold' : ''
+							)}
+						>
+							<a href={route.path}>{route.name}</a>
+						</li>
+					{/each}
+					<a
+						href="#contact"
+						class="py-2.5 bg-slate-900 text-white px-5 rounded-full transition-all duration-200 ease-in-out hover:bg-opacity-80"
+						>Contact Me</a
 					>
-						<a href={route.path}>{route.name}</a>
-					</li>
-				{/each}
-			</ul>
-		</nav>
-
-		<div class="hidden sm:block">
-			<a
-				href="#contact"
-				class="py-3 bg-primary text-white px-4 rounded-md transition-all duration-200 ease-in-out hover:bg-primary/80"
-				>Contact</a
-			>
+				</ul>
+			</nav>
 		</div>
 
 		<Button
@@ -109,3 +107,11 @@
 		</Sheet.Header>
 	</Sheet.Content>
 </Sheet.Root>
+
+<style lang="postcss">
+	.glass-nav {
+		background: rgba(255, 255, 255, 0.8);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	}
+</style>

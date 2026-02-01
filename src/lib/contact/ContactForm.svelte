@@ -1,43 +1,47 @@
-<script>
-	import Button from '$lib/components/ui/button/button.svelte';
-</script>
+<section id="contact" class="py-24 px-6 bg-white">
+	<div class="max-w-3xl mx-auto">
+		<div class="text-center mb-12">
+			<h2 class="text-3xl font-bold text-slate-900">Let's work together</h2>
+			<p class="text-slate-500 mt-4">
+				Have a project in mind or just want to say hi? I'm currently open for new opportunities.
+			</p>
+		</div>
 
-<section class="mt-8" id="contact">
-	<div class="max-w-xl m-auto">
-		<h1 class="text-2xl font-bold text-center">Contact Form</h1>
-
-		<form class="flex flex-col mt-8 gap-6">
-			<div class="flex flex-col gap-2">
-				<label for="name" class="text-sm text-gray-500 font-medium">Name</label>
-				<input
-					type="text"
-					id="name"
-					name="name"
-					placeholder="Enter your name"
-					class="p-2 rounded-sm border border-gray-400"
-				/>
+		<form on:submit|preventDefault={() => {}} class="space-y-6 bg-white">
+			<div class="grid md:grid-cols-2 gap-6">
+				<div class="space-y-2">
+					<label for="name" class="text-sm font-semibold text-slate-700">Name</label>
+					<input
+						name="name"
+						type="text"
+						placeholder="John Doe"
+						class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50"
+					/>
+				</div>
+				<div class="space-y-2">
+					<label for="email" class="text-sm font-semibold text-slate-700">Email</label>
+					<input
+						name="email"
+						type="email"
+						placeholder="john@example.com"
+						class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50"
+					/>
+				</div>
 			</div>
-			<div class="flex flex-col gap-2">
-				<label for="email" class="text-sm text-gray-500 font-medium">Email</label>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					placeholder="Enter your email"
-					class="p-2 rounded-sm border border-gray-400"
-				/>
-			</div>
-			<div class="flex flex-col gap-2">
-				<label for="message" class="text-sm text-gray-500 font-medium">Message</label>
+			<div class="space-y-2">
+				<label for="message" class="text-sm font-semibold text-slate-700">Message</label>
 				<textarea
 					name="message"
-					id="message"
-					rows="3"
-					placeholder="Enter your message"
-					class="p-2 rounded-sm border border-gray-400"
+					rows="5"
+					placeholder="Tell me about your project..."
+					class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 resize-none"
 				></textarea>
 			</div>
-			<Button type="submit" class="btn btn-primary">Submit</Button>
+			<button
+				class="w-full py-4 bg-primary text-white rounded-lg font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-200"
+			>
+				Send Message
+			</button>
 		</form>
 	</div>
 </section>

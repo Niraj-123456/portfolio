@@ -10,7 +10,7 @@
 
 <main class="w-full min-h-screen">
 	<Header />
-	<div class="w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-0">
+	<div class="w-full">
 		<slot />
 	</div>
 	<Footer />

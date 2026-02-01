@@ -2,7 +2,7 @@
 	import { FacebookIcon, Instagram, Twitter } from 'lucide-svelte';
 </script>
 
-<section class="w-full pt-8 mt-12 border-t border-gray-300">
+<footer class="w-full pt-8 pb-4 border-t border-gray-300">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex gap-24 p-4 sm:gap-48 sm:px-8 lg:p-0">
 			<div>
@@ -47,4 +47,4 @@
 			</p>
 		</div>
 	</div>
-</section>
+</footer>
