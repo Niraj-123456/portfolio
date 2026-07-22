@@ -1,5 +1,5 @@
-<section class="py-10 border-y border-slate-200 bg-white">
-	<p class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-4">
+<section class="py-10 pb-14 border-y border-slate-200 bg-white">
+	<p class="text-center font-semibold text-slate-400 uppercase tracking-widest mb-4">
 		Tech Stack &amp; Tools
 	</p>
 	<div class="w-full h-28 overflow-hidden relative marquee-container max-w-7xl mx-auto">

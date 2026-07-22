@@ -1,38 +1,18 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Sheet from '$lib/components/ui/sheet';
 	import { cn } from '$lib/utils';
 	import classname from 'classnames';
 	import { Menu } from 'lucide-svelte';
-	import { onDestroy, onMount } from 'svelte';
 
-	let top = 0;
 	let open = false;
 
 	const routes = [
 		{ path: '/', name: 'Home' },
 		{ path: '#about', name: 'About' },
-		{ path: '#contact', name: 'Contact' },
 		{ path: '#projects', name: 'Projects' }
 	];
-
-	const handleScroll = () => {
-		const target = document.scrollingElement || document.documentElement;
-
-		const { scrollTop } = target;
-
-		top = scrollTop;
-	};
-
-	onMount(() => {
-		if (browser) document.addEventListener('scroll', handleScroll);
-	});
-
-	onDestroy(() => {
-		if (browser) document.removeEventListener('scroll', handleScroll);
-	});
 </script>
 
 <header
@@ -53,7 +33,7 @@
 						<li
 							class={classname(
 								'transition-all duration-200 ease-in-out py-2 px-4 rounded-sm cursor-pointer hover:bg-white/10',
-								$page.url.pathname === route.path ? 'font-semibold' : ''
+								$page.url.pathname === route.path ? 'font-semibold text-blue-700' : ''
 							)}
 						>
 							<a href={route.path}>{route.name}</a>
@@ -95,7 +75,7 @@
 							<li
 								class={classname(
 									'w-[118%] px-6 text-start transition-all duration-200 ease-in-out text-md py-2 -mx-6 rounded-sm cursor-pointer hover:bg-white/10',
-									$page.url.pathname === route.path ? 'font-semibold text-black' : ''
+									$page.url.pathname === route.path ? 'font-semibold text-primary' : ''
 								)}
 							>
 								<a href={route.path}>{route.name}</a>
