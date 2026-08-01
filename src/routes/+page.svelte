@@ -1,13 +1,21 @@
 <script>
-	import ContactForm from '$lib/contact/ContactForm.svelte';
-	import HeroSection from '$lib/hero-section/HeroSection.svelte';
-	import FeaturedProject from '$lib/projects/FeaturedProject.svelte';
-	import TechStack from '$lib/tech-stack/TechStack.svelte';
+	import ContactSection from '$lib/components/sections/ContactSection.svelte';
+	import HeroSection from '$lib/components/sections/HeroSection.svelte';
+	import ProjectsSection from '$lib/components/sections/ProjectsSection.svelte';
+	import TechStackSection from '$lib/components/sections/TechStackSection.svelte';
 </script>
 
-<div class="w-full grid gap-12">
+<svelte:head>
+	<title>Niraj Lama | Software Engineer</title>
+	<meta
+		name="description"
+		content="Niraj Lama is a software engineer building clear, useful, and memorable web experiences."
+	/>
+</svelte:head>
+
+<div class="w-full overflow-hidden">
 	<HeroSection />
-	<TechStack />
-	<FeaturedProject />
-	<ContactForm />
+	<TechStackSection />
+	<ProjectsSection />
+	<ContactSection />
 </div>
