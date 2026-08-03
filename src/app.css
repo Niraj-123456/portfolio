@@ -28,6 +28,27 @@
 	--brand-strong: #a9cf20;
 }
 
+.dark {
+	color-scheme: dark;
+	--background: 222 31% 9%;
+	--foreground: 42 25% 92%;
+	--muted: 222 22% 15%;
+	--muted-foreground: 218 12% 64%;
+	--card: 222 28% 12%;
+	--card-foreground: 42 25% 92%;
+	--border: 220 17% 24%;
+	--input: 220 17% 24%;
+	--primary: 72 80% 58%;
+	--primary-foreground: 222 31% 9%;
+	--accent: 72 80% 58%;
+	--accent-foreground: 222 31% 9%;
+	--ring: 72 80% 58%;
+	--surface: #171c27;
+	--surface-muted: #111620;
+	--brand: #d8f45a;
+	--brand-strong: #d8f45a;
+}
+
 @layer base {
 	* {
 		@apply border-border scroll-smooth;
@@ -35,6 +56,9 @@
 	body {
 		@apply bg-background text-foreground antialiased;
 		margin: 0;
+		transition:
+			background-color 300ms ease,
+			color 300ms ease;
 	}
 	a {
 		@apply transition-colors duration-200;
@@ -63,7 +87,7 @@
 	}
 
 	.form-control {
-		@apply w-full rounded-lg border border-slate-300 bg-white/60 px-4 py-3 outline-none transition focus:border-slate-900 focus:ring-4 focus:ring-accent/20;
+		@apply w-full rounded-lg border border-input bg-background/60 px-4 py-3 text-foreground outline-none transition placeholder:text-muted-foreground focus:border-accent focus:ring-4 focus:ring-accent/20;
 	}
 }
 

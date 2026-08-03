@@ -93,22 +93,22 @@
 <section id="contact" class="px-6 py-24 md:py-32" use:reveal>
 	<div class="section-shell grid gap-14 lg:grid-cols-[.7fr_1.3fr]">
 		<div>
-			<p class="mono mb-4 text-xs uppercase tracking-[.2em] text-slate-500">Start a conversation</p>
-			<h2 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-				Have an idea?<br /><span class="text-slate-400">Let's make it real.</span>
+			<p class="eyebrow mb-4 text-muted-foreground">Start a conversation</p>
+			<h2 class="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl">
+				Have an idea?<br /><span class="text-muted-foreground">Let's make it real.</span>
 			</h2>
-			<p class="mt-6 max-w-sm leading-relaxed text-slate-600">
+			<p class="mt-6 max-w-sm leading-relaxed text-muted-foreground">
 				Have a project in mind or just want to say hi? I'm currently open for new opportunities.
 			</p>
 		</div>
 
 		<form
 			on:submit={handleSubmit}
-			class="space-y-6 rounded-2xl border border-slate-300 bg-[var(--surface)] p-6 shadow-sm sm:p-8"
+			class="space-y-6 rounded-2xl border border-border bg-[var(--surface)] p-6 shadow-sm dark:shadow-black/20 sm:p-8"
 		>
 			<div class="grid md:grid-cols-2 gap-6">
 				<div class="space-y-2">
-					<label for="firstName" class="text-sm font-semibold text-slate-700">First Name</label>
+					<label for="firstName" class="text-sm font-semibold text-foreground">First Name</label>
 					<input
 						id="firstName"
 						aria-invalid={!!firstNameError}
@@ -124,7 +124,7 @@
 					{/if}
 				</div>
 				<div class="space-y-2">
-					<label for="lastName" class="text-sm font-semibold text-slate-700">Last Name</label>
+					<label for="lastName" class="text-sm font-semibold text-foreground">Last Name</label>
 					<input
 						id="lastName"
 						aria-invalid={!!lastNameError}
@@ -142,7 +142,7 @@
 			</div>
 			<div class="grid md:grid-cols-2 gap-6">
 				<div class="space-y-2">
-					<label for="email" class="text-sm font-semibold text-slate-700">Email</label>
+					<label for="email" class="text-sm font-semibold text-foreground">Email</label>
 					<input
 						id="email"
 						aria-invalid={!!emailError}
@@ -158,7 +158,8 @@
 					{/if}
 				</div>
 				<div class="space-y-2">
-					<label for="phoneNumber" class="text-sm font-semibold text-slate-700">Phone Number</label>
+					<label for="phoneNumber" class="text-sm font-semibold text-foreground">Phone Number</label
+					>
 					<input
 						id="phoneNumber"
 						bind:value={phoneNumber}
@@ -171,7 +172,7 @@
 			</div>
 
 			<div class="space-y-2">
-				<label for="message" class="text-sm font-semibold text-slate-700">Message</label>
+				<label for="message" class="text-sm font-semibold text-foreground">Message</label>
 				<textarea
 					id="message"
 					aria-invalid={!!messageError}
@@ -187,13 +188,13 @@
 				{/if}
 			</div>
 			{#if submissionSuccess}
-				<div class="flex items-center justify-between rounded-lg bg-[#e8f7a5] px-4 py-3">
-					<p class="text-sm text-slate-900">Your message has been sent successfully!</p>
+				<div class="flex items-center justify-between rounded-lg bg-accent px-4 py-3">
+					<p class="text-sm text-accent-foreground">Your message has been sent successfully!</p>
 					<button
 						type="button"
 						on:click={() => (submissionSuccess = false)}
 						aria-label="Dismiss success message"
-						class="px-1.5 py-0.5 text-xs text-slate-700 transition-all hover:text-slate-950"
+						class="px-1.5 py-0.5 text-xs text-accent-foreground transition-all hover:opacity-70"
 					>
 						X
 					</button>
@@ -208,7 +209,7 @@
 			<button
 				disabled={isSubmitting}
 				type="submit"
-				class="w-full rounded-lg bg-primary py-4 text-lg font-bold text-white shadow-xl shadow-slate-300 transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+				class="w-full rounded-lg bg-primary py-4 text-lg font-bold text-primary-foreground shadow-xl shadow-slate-300 transition hover:opacity-85 dark:shadow-black/25 disabled:cursor-not-allowed disabled:opacity-60"
 			>
 				{isSubmitting ? 'Sending…' : 'Send Message'}
 			</button>
