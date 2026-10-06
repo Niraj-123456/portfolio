@@ -18,7 +18,7 @@
 	<div class="section-shell flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 		<div>
 			<BrandMark className="inline-block" />
-			<p class="mt-3 text-sm text-muted-foreground">Designing and building from Kathmandu.</p>
+			<p class="mt-3 text-sm text-muted-foreground">Building digital things that matter.</p>
 		</div>
 		<div class="flex gap-5 text-sm font-semibold">
 			<a

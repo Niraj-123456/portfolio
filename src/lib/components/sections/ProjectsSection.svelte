@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowUpRight, Github } from 'lucide-svelte';
 	import { reveal } from '$lib/actions/reveal';
+	import ProjectGallery from '$lib/components/projects/ProjectGallery.svelte';
 	import { projects } from '$lib/data/portfolio';
 </script>
 
@@ -20,7 +21,7 @@
 				products feel good.
 			</p>
 		</div>
-		<div class="space-y-20">
+		<div class="space-y-28 md:space-y-36">
 			{#each projects as project, index}
 				<article
 					use:reveal={{
@@ -32,18 +33,7 @@
 						? 'lg:[&>div:first-child]:order-2'
 						: ''}"
 				>
-					<div class="group relative overflow-hidden rounded-2xl bg-slate-800 p-3">
-						<img
-							src={project.image}
-							alt={`${project.title} project preview`}
-							loading={index === 0 ? 'eager' : 'lazy'}
-							class="aspect-[16/10] w-full rounded-xl object-cover transition duration-500 group-hover:scale-[1.03]"
-						/>
-						<span
-							class="mono absolute left-7 top-7 rounded-full bg-slate-900/80 px-3 py-1 text-xs text-accent"
-							>{project.number}</span
-						>
-					</div>
+					<ProjectGallery images={project.images} title={project.title} {index} />
 					<div class="max-w-lg">
 						<p class="mono mb-4 text-xs uppercase tracking-[.16em] text-accent">
 							{project.type}

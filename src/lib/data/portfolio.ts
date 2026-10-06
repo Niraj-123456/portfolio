@@ -3,7 +3,7 @@ export type Project = {
 	type: string;
 	title: string;
 	description: string;
-	image: string;
+	images: string[];
 	tags: string[];
 	repo: string;
 	live?: string;
@@ -24,7 +24,11 @@ export const projects: Project[] = [
 		title: 'Fake Store',
 		description:
 			'A complete shopping experience with cart management, Stripe payments, and an analytics-ready admin dashboard.',
-		image: '/images/projects/fake-store/fake-store1.png',
+		images: [
+			'/images/projects/generated/fake-store.svg',
+			'/images/projects/fake-store/fake-store2.png',
+			'/images/projects/fake-store/fake-store-admin1.png'
+		],
 		tags: ['React', 'Redux', 'Stripe'],
 		repo: 'https://github.com/Niraj-123456/fake-store'
 	},
@@ -34,7 +38,7 @@ export const projects: Project[] = [
 		title: 'Recipe Finder',
 		description:
 			'A calm, mobile-first way for food lovers to discover recipes, save favorites, and get cooking faster.',
-		image: '/images/projects/foodapp.png',
+		images: ['/images/projects/generated/recipe-finder.svg', '/images/projects/foodapp.png'],
 		tags: ['SvelteKit', 'MealDB API', 'Tailwind'],
 		live: 'https://foodapp-mobile.vercel.app/',
 		repo: 'https://github.com/Niraj-123456/foodapp'
@@ -45,7 +49,7 @@ export const projects: Project[] = [
 		title: 'Chat Application',
 		description:
 			'Real-time messaging with multimedia sharing and secure user management, powered by Firebase.',
-		image: '/images/projects/chat-app.jpg',
+		images: ['/images/projects/generated/chat-app.svg', '/images/projects/chat-app.jpg'],
 		tags: ['React', 'Firebase', 'Shadcn UI'],
 		repo: 'https://github.com/Niraj-123456/messenger-app'
 	}
